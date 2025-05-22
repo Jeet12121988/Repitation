@@ -7,12 +7,27 @@ import org.testng.annotations.Test;
 
 public class TestNg {
 	
-	@BeforeTest
+	@BeforeClass
 	public void a() {
 		
-		System.out.println("hi i am beformethod");
+		System.out.println("hi i am beforeclass");
 		
 	}
+	
+	@BeforeTest
+	public void ab() {
+		
+		System.out.println("hi i am beforeTest");
+		
+	}
+	
+	@BeforeMethod
+	public void abc() {
+		
+		System.out.println("hi i am beforeMethod");
+		
+	}
+
 	
 	@Test
 public void b() {
